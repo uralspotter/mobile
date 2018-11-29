@@ -15,4 +15,10 @@ public class MainClassTest extends MainClass {
     public void testGetClassNumber() {
         Assert.assertTrue("The number returned by less 45", number2 > 45);
     }
+
+    @Test
+    public void testGetClassString() {
+        Assert.assertTrue("The string does not contain the word Hello", class_string.contains("Hello"));
+        Assert.assertTrue("The string does not contain the word hello", class_string.contains("hello"));
+    }
 }
