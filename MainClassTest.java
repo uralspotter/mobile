@@ -18,7 +18,6 @@ public class MainClassTest extends MainClass {
 
     @Test
     public void testGetClassString() {
-        Assert.assertTrue("The string does not contain the word Hello", class_string.contains("Hello"));
-        Assert.assertTrue("The string does not contain the word hello", class_string.contains("hello"));
+        Assert.assertTrue("The string does not contain the word Hello or hello", class_string.contains("Hello") || class_string.contains("hello"));
     }
 }
